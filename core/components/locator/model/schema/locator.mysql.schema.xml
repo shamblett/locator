@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model package="locator" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM">
+	
+	<!-- Locator ip/country table -->   
+    <object  class="locatorCountry"  table="locator_country" tablePrefix="lo_" extends="xPDOObject">
+        <field key="ipFrom" dbtype="int" phptype="integer" null="false" default="0" />
+        <field key="ipTo" dbtype="int" phptype="integer" null="false" default="0" />
+        <field key="countryCode2" dbtype="varchar" precision="2" phptype="string" null="false" default="" />
+        <field key="countryCode3" dbtype="varchar" precision="3" phptype="string" null="false" default="" />
+        <field key="countryName" dbtype="varchar" precision="50" phptype="string" null="false" default="" />
+    </object>
+    
+ </model>
+    
+    
